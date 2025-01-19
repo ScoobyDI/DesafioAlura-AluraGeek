@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Press Start 2P", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-de-fondo: #5D04D9;
+    --color-de-texto-blanco: #E5E5E5;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* Para dispositivos móviles */
+
+.cabecera {
+    background-color: var(--color-de-fondo);
+    text-align: center;
+    padding: 1.4rem;
+    border-bottom: 0.5rem solid gray;
+}
+
+.cabecera__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera__titulo {
+    font-size: 1.5rem;
+    color: var(--color-de-texto-blanco);
+}
+
+
+/* Para pantallas grandes */
+@media (min-width: 1024px) {
+
+
+
+
+}
+
+
+
+
+
