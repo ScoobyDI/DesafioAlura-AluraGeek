@@ -8,7 +8,9 @@ function crearCard(nombre, precio, imagen, id) {
     const producto = document.createElement("div");
     producto.className = "productos__card";
     producto.innerHTML = `
-        <img src="${imagen}" class="productos__img" />
+        <div class="card-container--img">
+            <img src="${imagen}" class="productos__img" />
+        </div>
         <div class="card-container--info">
             <p class="producto__nombre">${nombre}</p>
             <div class="card-container--value">
