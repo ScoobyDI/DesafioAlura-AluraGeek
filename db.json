@@ -1,0 +1,10 @@
+{
+    "productos": [
+        {
+            "nombre": "Capitan America",
+            "precio": "10",
+            "imagen": "https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg",
+            "id": "1"
+        }
+    ]
+}
