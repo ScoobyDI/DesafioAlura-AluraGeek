@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    font-family: "Press Start 2P", serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "IBM Plex Mono", serif;
 }
 
 :root {
@@ -40,13 +40,16 @@ body {
 .cabecera__titulo {
     font-size: 1.5rem;
     color: var(--color-de-texto-blanco);
+    font-family: "Press Start 2P", serif;
 }
 
 /* ---------------------------- Main - Añadir Productos ---------------------------- */
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .productos-agregar {
@@ -61,6 +64,7 @@ main {
 .productos-agregar__titulo {
     font-size: 1.5rem;
     text-align: center;
+    font-family: "Press Start 2P", serif;
 }
 
 .productos-agregar__formulario {
@@ -109,17 +113,111 @@ main {
 }
 
 
+/* ---------------------------- Main - Mis Productos ---------------------------- */
 
+.productos {
+    width: 100%;
+    max-width: 34rem;
+    padding: 2.5rem;
+}
 
-/* Para pantallas grandes */
-@media (min-width: 1024px) {
+.productos__titulo {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+}
 
+.productos__list {
+    padding: 0.9rem; /*y 3.4*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem 0.625rem ;
+}
 
+.productos__card {
+    background-color: var(--color-de-fondo);
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    border: 3px solid black;
+    width: 48%;
+    color: white;
+    font-size: 0.9rem;
+}
 
+.productos__img {
+    width: 100%;
+    border-radius: 0.625rem;
+    border: 3px solid black;
+}
 
+.producto__nombre {
+    padding: 0.625rem;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: var(--color-de-fondo);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__contenedor__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer__creditos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 }
 
 
 
+/* Para pantallas grandes */
+@media (min-width: 768px) {
 
+    main {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        padding: 4rem;;
+    }
+
+    .productos {
+        padding: 2.5rem;
+        order: 1;
+        max-width: none;
+    }
+
+    .productos__list {
+        box-shadow: -5px 5px 10px gray;
+        height: 100vh; /* Define una altura fija para el contenedor */
+        overflow-y: auto; /* Activa el scroll vertical */
+    }
+
+    .productos-agregar{
+        order: 2;
+        width: 35%;
+    }
+
+    .productos__card {
+        width: 30%;
+    }
+
+}
 
