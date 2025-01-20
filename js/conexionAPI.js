@@ -7,6 +7,7 @@ async function listarProductos() {
 
 async function anadirProducto(nombre,precio,imagen) {
     const conexion = await fetch("http://localhost:3001/productos",{
+
         method:"POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify({
@@ -19,7 +20,22 @@ async function anadirProducto(nombre,precio,imagen) {
     return conexionConvertida;
 }
 
+// Nueva función para eliminar un producto por su ID
+async function eliminarProducto(id) {
+    try {
+        const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+            method: "DELETE",
+        });
+        return conexion.ok; // Devuelve true si se eliminó correctamente
+    } catch (error) {
+        console.error("Error al eliminar el producto:", error);
+        return false; // Devuelve false si ocurre un error
+    }
+}
+
+
 export const conexionAPI={
     listarProductos,
-    anadirProducto
+    anadirProducto,
+    eliminarProducto
 }
