@@ -17,10 +17,10 @@
     <main>
         <section class="productos-agregar">
             <h2 class="productos-agregar__titulo">AGREGAR PRODUCTO:</h2>
-            <form class="productos-agregar__formulario">
-                <input class="productos-agregar__campo" type="text" placeholder="nombre...">
-                <input class="productos-agregar__campo" type="text" placeholder="precio...">
-                <input class="productos-agregar__campo" type="text" placeholder="imagen...">
+            <form class="productos-agregar__formulario" data-formulario>
+                <input class="productos-agregar__campo" type="text" placeholder="nombre..." required data-nombre>
+                <input class="productos-agregar__campo" type="number" step="0.01" min="0" placeholder="precio..." required data-precio>
+                <input class="productos-agregar__campo" type="text" placeholder="imagen..." required data-imagen>
                 <div class="productos-agregar__botones">
                     <button class="productos-agregar__boton productos-agregar__enviar">Enviar</button>
                     <button class="productos-agregar__boton productos-agregar__limpiar">Limpiar</button>
@@ -29,8 +29,8 @@
         </section>
         <section class="productos">
             <h2 class="productos__titulo">MIS PRODUCTOS</h2>
-            <div class="productos__list">
-                <div class="productos__card">
+            <div class="productos__list" data-lista>
+                <!-- <div class="productos__card">
                     <img src="./img/producto1.png" class="productos__img" />
                     <div class="card-container--info">
                         <p class="producto__nombre">Nombre</p>
@@ -109,7 +109,7 @@
                             <img src="./img/trash_icon.png" />
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -122,7 +122,9 @@
             <p class="footer__texto">Desarollado por José Luis De la Cruz Iñigo</p>
             <p class="footer__texto">ALURA LATAM - 2025</p>
         </div>
-
     </footer>
+    
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/anadirProducto.js" type="module"></script>
 </body>
 </html>

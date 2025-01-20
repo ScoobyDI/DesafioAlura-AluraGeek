@@ -217,6 +217,11 @@ main {
 
     .productos__card {
         width: 30%;
+        height: 45vh;
+    }
+
+    .productos__img {
+        height: 28vh;
     }
 
 }

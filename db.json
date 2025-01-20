@@ -1,10 +1,22 @@
 {
-    "productos": [
-        {
-            "nombre": "Capitan America",
-            "precio": "10",
-            "imagen": "https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg",
-            "id": "1"
-        }
-    ]
+  "productos": [
+    {
+      "nombre": "Funko Pop Luffy",
+      "precio": "S/. 70,90",
+      "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/20255224/image-0.jpg?v=638709237317330000",
+      "id": "1"
+    },
+    {
+      "nombre": "Funko Pop Naruto",
+      "precio": "S/. 66.00",
+      "imagen": "https://funkospace.pe/cdn/shop/products/FU6366lg_580x.jpg?v=1619739357",
+      "id": "-I2jeC5"
+    },
+    {
+      "nombre": "Funko Pop Ichigo",
+      "precio": "S/. 69.99",
+      "imagen": "https://sevenfiguarts.com.pe/wp-content/uploads/2022/09/Funko-Pop-Animation-Ichigo-AAA-Anime-Exclusive-Peru.jpg",
+      "id": "TGOH8v8"
+    }
+  ]
 }
